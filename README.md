@@ -18,6 +18,24 @@ Design, deploy, and maintain a scalable LAN network for multiple devices/users t
 - ZABBIX - 
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
+- 
+
+## Firewall Rules 
+| Purpose                                        | Destina                   | Purpose        |
+|-----------------------------------------------|----------------------------|----------------|
+| Management                                    | Network Admins              | Network Admins|
+| Servers                                       | test                        | Network Admins|
+| Workstation                                   | test                        | Network Admins|
+| Access Point                                  | Wifi                        | Network Admins|
+
+## VLAN Configurations
+| VLAN Names                                         | Purpose        |
+|-----------------------------------------------|----------------------------|
+| Management  | Network Admins|
+| Servers     | <a href="https://google.com">SIEM Tools & Technologies</a> |
+| Workstation  | User Devices|
+| Access Point        | Wifi|
+
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
