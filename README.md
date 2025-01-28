@@ -99,7 +99,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ## **Future Plans**
-- Implement site to site VPN to an Oracle Cloud VM via**Cisco IPSec Tunnel** for network access control
+- Implement site to site VPN to an Oracle Cloud VM via **Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
 - Learn Python and set up an Ansible Playbook for Network Automation.
 - Implement AI-driven network management systems (ex. ML for anomaly detection, predicting network issues, or detect zero-day attacks)
