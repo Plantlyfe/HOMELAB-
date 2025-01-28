@@ -90,7 +90,7 @@ Example below.
 
 
 # Network Topology
-![Network Diagram]([https://raw.githubusercontent.com/your-username/homelab-network-infrastructure/main/topology/network-diagram.png](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png))
+![Network Diagram](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png)
 
 ## **Configuration Files**
 ### **Cisco Router Configuration**
