@@ -11,7 +11,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - **Proxmox Virtualization Server:** Hosting various VMs for Windows Server, Splunk, Zabbix, and testing environments.
 - **Wi-Fi Access Point** Providing secure wireless access.
 - **Monitoring & Logging:** Implemented **Zabbix for SNMP monitoring** and **Splunk for log analysis**.
-- **VPN Configuration:** Remote access via **Cisco VPN**.
+- **VPN Configuration:** Remote access via **Tailscale**.
 
 ### Skills Learned
 
