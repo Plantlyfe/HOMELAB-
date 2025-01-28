@@ -73,7 +73,7 @@ Example below.
 | LAN Router        | Cisco 1921/K0-04  | Gateway, DHCP Server, Internal LAN  | Static              |
 | Proxmox Server    | Dell Optiplex     | Virtualization Host                 | Static              |
 | TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
-
+| ISP Router        | ISP Router        | WAN Router                          | Static              |
 
 ### Virtual Machines
 | VM Name            | OS                     | Role                       | IP           |
