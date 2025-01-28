@@ -113,7 +113,7 @@ Example below.
 ---
 
 ## **Future Plans**
-- Implement **Cisco IPSec** for network access control.
+- Implement site to site VPN to an Oracle Cloud VM via**Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
 - Test **dynamic routing protocols (OSPF/BGP)**.
 - Learn Python and set up an Ansible Playbook for Network Automation.
