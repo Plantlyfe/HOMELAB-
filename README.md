@@ -29,6 +29,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 - Tailscale - Remote Access VPN
 - SNMP Tester
+- Lucid Charts & Draw.io
 
 ###  **Firewall Rules & Security** 
 | Purpose                                        | Destina                   | Purpose        |
