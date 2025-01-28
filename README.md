@@ -89,7 +89,7 @@ Example below.
 | Ubuntu Desktop     | Ubuntu Desktop         | Client                     |
 | Kali Linux         | Linux                  | Client                     |
 | Zabbix             | Ubuntu Server          | SNMP Server                |
-| AdGuard            | Container              | DNS resolvers              |
+| AdGuard            | Container              | DNS resolver               |
 | CML                | Linux                  | Virtual Lab Environment    |
 
 ## **Configuration Files**
