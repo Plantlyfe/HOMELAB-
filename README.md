@@ -116,8 +116,8 @@ Example below.
 - Implement **Cisco IPSec** for network access control.
 - Expand Splunk dashboards for **threat detection**.
 - Test **dynamic routing protocols (OSPF/BGP)**.
-- Set up an Ansible Playbook for Network Automation using Python.
-- Implement AI-driven network management systems.
+- Learn Python and set up an Ansible Playbook for Network Automation.
+- Implement AI-driven network management systems (e. ML for anomaly detection, predict network issues, or detect zero-day attacks)
 - Practice BGP configuration, route optimization, and policy management, to effectively manage network traffic in service provider environments.
 
 📄 [View Future Plans](documentation/future-plans.md)
