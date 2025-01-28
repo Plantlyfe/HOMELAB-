@@ -87,6 +87,11 @@ Example below.
 | AdGuard            | Container              | DNS resolver               | DHCP         |
 | CML                | Linux                  | Virtual Lab Environment    | DHCP         |
 
+
+
+# Network Topology
+![Network Diagram]([https://raw.githubusercontent.com/your-username/homelab-network-infrastructure/main/topology/network-diagram.png](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png))
+
 ## **Configuration Files**
 ### **Cisco Router Configuration**
 - VLAN configuration with ROAS (Router on a Stick)
