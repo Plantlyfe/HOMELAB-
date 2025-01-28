@@ -1,11 +1,9 @@
-# NETWORK INFRASTRUCTURE OVERVIEW
-
 ### Overview
 Designed, deployed, and maintained a scalable LAN network for multiple devices/users to simulate an enterprise network using a variety of network devices such as a Cisco router, Cisco switch, Access Point and a Proxmox virtualization server. Configured inter-VLAN routing with ROAS. Implemented VLAN segmentation, and optimized Layer 2/3 switching for security and performance such as SNMPv3 for secure enterprise-leve network monitoring. ACL/firewall rules to restrict and permit access. Setup VPN & Remote Access for secure remote administration.
 
-# Homelab Network Infrastructure
+# Network Infrastructure
 
-## Overview
+### Overview
 This repository documents my **homelab network setup**, highlighting my expertise in **network administration, security, and monitoring**. The setup includes:
 - **Cisco Router & Switch:** Core network infrastructure with VLANs, DHCP, ACLs, and VPN.
 - **Proxmox Virtualization Server:** Hosting various VMs for Windows Server, Splunk, Zabbix, and testing environments.
@@ -23,8 +21,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ### Tools Used
 
-- SPLUNK - Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- ZABBIX - 
+- SPLUNK & ZABBIX - Security Information and Event Management (SIEM) system for network management, log ingestion and analysis.
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 - Tailscale - Remote Access via VPN
@@ -42,14 +39,14 @@ This repository documents my **homelab network setup**, highlighting my expertis
 📄 [View ACL Rules](firewall/acl-rules.md)
 
 
-### **VLAN Configuration/IP Subnet Plan**
-| VLAN Name         | Subnet         | Purpose                     |
-|-------------------|---------------|-----------------------------|
-| Native VLAN | Subnet 1  | General Network                       |
-| Servers     | Subnet 2  | Windows Server, Zabbix, Splunk        |
-| Clients     | Subnet 3  | Windows/Linux Workstations            |
-| Access Point| Subnet 4  | Wi-Fi                                 |
-| Managenment | Subnet 5  | Network Admin                         |
+### **VLAN Configuration/ Subnet Plan**
+| VLAN Name         | Subnet        | Purpose                               |
+|-------------------|---------------|---------------------------------------|
+| Native VLAN       | Subnet 1      | General Network                       |
+| Servers           | Subnet 2      | Windows Server, Zabbix, Splunk        |
+| Clients           | Subnet 3      | Windows/Linux Workstations            |
+| Access Point      | Subnet 4      | Wi-Fi                                 |
+| Managenment       | Subnet 5      | Network Admin                         |
 
 
 
@@ -72,25 +69,25 @@ Example below.
 
 ---
 ### Hardware
-| Device             | Model             | Role                       |
-|-------------------|-------------------|-----------------------------|
-| Core Switch       | **TBD**          | VLAN Management             |
-| LAN Router        | Cisco 1921/K0-04  | Gateway, DHCP Server, Internal LAN |
-| Proxmox Server    | Dell Optiplex     | Virtualization Host         |
-| TP-Link Router    | Archer 54         | Wi-Fi Access Point          |
+| Device             | Model             | Role                               | IP                  |
+|-------------------|-------------------|-------------------------------------|---------------------|
+| Core Switch       | **TBD**           | VLAN Management                     | Static (Management) |
+| LAN Router        | Cisco 1921/K0-04  | Gateway, DHCP Server, Internal LAN  | Static              |
+| Proxmox Server    | Dell Optiplex     | Virtualization Host                 | Static              |
+| TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
 
 
 ### Virtual Machines
-| VM Name             | OS                    | Role                       |
-|--------------------|------------------------|----------------------------|
-| SPLUNK             | Ubuntu Server          | Syslog Server              |
-| SERVER1            | Windows Server 2022    | Domain Controller          |
-| Target-PC          | Windows 10 Pro         | Client                     |
-| Ubuntu Desktop     | Ubuntu Desktop         | Client                     |
-| Kali Linux         | Linux                  | Client                     |
-| Zabbix             | Ubuntu Server          | SNMP Server                |
-| AdGuard            | Container              | DNS resolver               |
-| CML                | Linux                  | Virtual Lab Environment    |
+| VM Name            | OS                     | Role                       | IP           |
+|--------------------|------------------------|----------------------------|--------------|
+| SPLUNK             | Ubuntu Server          | Syslog Server              | Static       |
+| SERVER1            | Windows Server 2022    | Domain Controller          | Static       |
+| Target-PC          | Windows 10 Pro         | Client                     | DHCP         |
+| Ubuntu Desktop     | Ubuntu Desktop         | Client                     | DHCP         |
+| Kali Linux         | Linux                  | Client                     | DHCP         |
+| Zabbix             | Ubuntu Server          | SNMP Server                | Static       |
+| AdGuard            | Container              | DNS resolver               | DHCP         |
+| CML                | Linux                  | Virtual Lab Environment    | DHCP         |
 
 ## **Configuration Files**
 ### **Cisco Router Configuration**
@@ -129,6 +126,9 @@ Example below.
 - Implement **Cisco IPSec** for network access control.
 - Expand Splunk dashboards for **threat detection**.
 - Test **dynamic routing protocols (OSPF/BGP)**.
+- Set up an Ansible Playbook for Network Automation using Python.
+- Implement AI-driven network management systems.
+- Practice BGP configuration, route optimization, and policy management, to effectively manage network traffic in service provider environments.
 
 📄 [View Future Plans](documentation/future-plans.md)
   
