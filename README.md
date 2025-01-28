@@ -25,6 +25,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 - Tailscale - Remote Access via VPN
+- SNMP Tester
 
 ###  **Firewall Rules & Security** 
 | Purpose                                        | Destina                   | Purpose        |
