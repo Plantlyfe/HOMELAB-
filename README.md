@@ -45,11 +45,11 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### **VLAN Configuration/IP Subnet Plan**
 | VLAN Name         | Subnet         | Purpose                     |
 |-------------------|---------------|-----------------------------|
-| Native VLAN | Subnet 1  | General Network             |
-| Servers     | Subnet 2  | Windows Server, Zabbix, Splunk |
-| Clients     | Subnet 3  | Windows/Linux Workstations  |
-| Access Point| Subnet 4  | Wi-FI               |
-| Managenment | Subnet 5  | Network Admin               |
+| Native VLAN | Subnet 1  | General Network                       |
+| Servers     | Subnet 2  | Windows Server, Zabbix, Splunk        |
+| Clients     | Subnet 3  | Windows/Linux Workstations            |
+| Access Point| Subnet 4  | Wi-Fi                                 |
+| Managenment | Subnet 5  | Network Admin                         |
 
 
 
