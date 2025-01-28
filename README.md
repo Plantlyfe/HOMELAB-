@@ -53,20 +53,6 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | Access Point      | Subnet 4      | Wi-Fi                                 |
 | Managenment       | Subnet 5      | Network Admin                         |
 
-
-
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
-
-
-## CUT OFF
-
 ---
 ### Hardware
 | Device             | Model             | Role                               | IP                  |
@@ -115,10 +101,9 @@ Example below.
 ## **Future Plans**
 - Implement site to site VPN to an Oracle Cloud VM via**Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
-- Test **dynamic routing protocols (OSPF/BGP)**.
 - Learn Python and set up an Ansible Playbook for Network Automation.
-- Implement AI-driven network management systems (e. ML for anomaly detection, predict network issues, or detect zero-day attacks)
-- Practice BGP configuration, route optimization, and policy management, to effectively manage network traffic in service provider environments.
+- Implement AI-driven network management systems (ex. ML for anomaly detection, predicting network issues, or detect zero-day attacks)
+- Test & Practice BGP configuration, route optimization, and policy management, to effectively manage network traffic in service provider environments.
 
 📄 [View Future Plans](documentation/future-plans.md)
   
