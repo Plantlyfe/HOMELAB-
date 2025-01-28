@@ -80,7 +80,7 @@ Example below.
 | TP-Link Router    | Archer 54         | Wi-Fi Access Point          |
 
 
-### Virtual Machones
+### Virtual Machines
 | VM Name             | OS                    | Role                       |
 |--------------------|------------------------|----------------------------|
 | SPLUNK             | Ubuntu Server          | Syslog Server              |
