@@ -29,7 +29,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 - Tailscale - Remote Access via VPN
 
-##  **Firewall Rules & Security** 
+###  **Firewall Rules & Security** 
 | Purpose                                        | Destina                   | Purpose        |
 |-----------------------------------------------|----------------------------|----------------|
 | Management                                    | Network Admins              | Network Admins|
@@ -71,6 +71,26 @@ Example below.
 ![Network Diagram](topology/network-diagram.png)
 
 ---
+### Hardware
+| Device             | Model             | Role                       |
+|-------------------|-------------------|-----------------------------|
+| Core Switch       | **TBD**          | VLAN Management             |
+| LAN Router        | Cisco 1921/K0-04  | Gateway, DHCP Server, Internal LAN |
+| Proxmox Server    | Dell Optiplex     | Virtualization Host         |
+| TP-Link Router    | Archer 54         | Wi-Fi Access Point          |
+
+
+### Virtual Machones
+| VM Name             | OS                    | Role                       |
+|--------------------|------------------------|----------------------------|
+| SPLUNK             | Ubuntu Server          | Syslog Server              |
+| SERVER1            | Windows Server 2022    | Domain Controller          |
+| Target-PC          | Windows 10 Pro         | Client                     |
+| Ubuntu Desktop     | Ubuntu Desktop         | Client                     |
+| Kali Linux         | Linux                  | Client                     |
+| Zabbix             | Ubuntu Server          | SNMP Server                |
+| AdGuard            | Container              | DNS resolvers              |
+| CML                | Linux                  | Virtual Lab Environment    |
 
 ## **Configuration Files**
 ### **Cisco Router Configuration**
