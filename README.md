@@ -68,11 +68,6 @@ Example below.
 ## CUT OFF
 
 ---
-
-## **Network Topology**
-![Network Diagram](topology/network-diagram.png)
-
----
 ### Hardware
 | Device             | Model             | Role                               | IP                  |
 |-------------------|-------------------|-------------------------------------|---------------------|
@@ -114,21 +109,6 @@ Example below.
 - STP configuration
 
 📄 [View Configuration](configurations/cisco-switch-config.txt)
-
----
-
-## **Network Monitoring**
-### **Zabbix for SNMP Monitoring**
-- Monitoring **CPU, memory, bandwidth usage** for all network devices.
-- Custom **Zabbix dashboards** for real-time insights.
-
-📄 [View Zabbix Setup](monitoring/zabbix-setup.md)
-
-### **Splunk for Log Analysis**
-- Collecting logs from **Cisco devices, Windows Server, and Linux VMs**.
-- Creating dashboards for **failed login attempts, VPN connections, and network activity**.
-
-📄 [View Splunk Setup](monitoring/splunk-setup.md)
 
 ---
 
