@@ -3,9 +3,9 @@
 ### Overview
 This repository documents my **homelab network setup**, highlighting my expertise in **network administration, security, and monitoring**. The setup includes:
 - **Cisco Router & Switch:** Core network infrastructure with VLANs, DHCP, and ACLs.
-- **Proxmox Virtualization Server:** Hosting various VMs for Windows Server, Splunk, Zabbix, and testing environments.
+- **Proxmox Virtualization Server:** Hosting various VMs for Windows Server, Splunk, Zabbix, and testing environments such as Cisco Modeling Labs.
 - **Wi-Fi Access Point** Providing secure wireless access.
-- **Monitoring & Logging:** Implemented **Zabbix for SNMP monitoring** and **Splunk for log analysis**.
+- **Monitoring & Logging:** Implemented **Zabbix for SNMP monitoring** and **Splunk for Syslog analysis**.
 - **VPN Configuration:** Remote access to Servers and Clients via **Tailscale** .
 
 ### Skills Learned
