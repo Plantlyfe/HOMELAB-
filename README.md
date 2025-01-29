@@ -37,7 +37,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | Management                                    | Network Admins              | Network Admins|
 | Servers                                       | test                        | Network Admins|
 | Workstation                                   | test                        | Network Admins|
-| Access Point                                  | Wifi                        | Network Admins|
+| Access Point                                  | Wifi Access to Homelab      | Network Admins|
 
 - Configured **ACLs** on Cisco Router to restrict access between VLANs and to provide Internet Access via ISP.
 
