@@ -28,8 +28,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 - Tailscale - Remote Access VPN
-- SNMP Tester
-- Lucid Charts & Draw.io
+- SNMP Paessler Tester Tool
+- Lucid Charts & Draw.io for Network diagrams
 
 ###  **Firewall Rules & Security** 
 | Purpose                                        | Destina                   | Purpose        |
