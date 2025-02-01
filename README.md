@@ -43,7 +43,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | Servers           | Subnet 2      | Windows Server, Zabbix, Splunk        |
 | Clients           | Subnet 3      | Windows/Linux Workstations            |
 | Access Point      | Subnet 4      | Wi-Fi                                 |
-| Managenment       | Subnet 5      | Network Admin                         |
+| Management       | Subnet 5      | Network Admin                         |
 
 ---
 ### Hardware
