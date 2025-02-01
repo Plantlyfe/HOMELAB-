@@ -51,7 +51,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### Firewall / ACL Confiuration
 - Access Group Configured to translate IP address via PAT (NAT Overload) on homelab network to access Internet via the ISP Router.
 - Blocked Specific Servers access to the internet
-- Denied SSH & RDP (Remote Desktop Protocol) access from Client VLAN to servers.
+- Denied SSH & RDP (Remote Desktop Protocol) access from Client VLAN to Servers VLAN.
+- Allowed only specific hosts access to Management VLAN
 - Blocked Access Point VLAN from accessing the Management & Server VLANs except for my Admin Laptop
 - Example:
 
