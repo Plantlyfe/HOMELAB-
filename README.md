@@ -49,8 +49,10 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ### Firewall / ACL Confiuration
-- Denied SSH & RDP (Remote Desktop Protocol) access from clients to servers.
-- Block Access Point VLAN from accessing the Management & Server VLANss except for my Admin Laptop
+- Access Group Configured to translate IP address via PAT (NAT Overload) on homelab network to access Internet via the ISP Router
+- Denied SSH & RDP (Remote Desktop Protocol) access from Client VLAN to servers.
+- Blocked Access Point VLAN from accessing the Management & Server VLANs except for my Admin Laptop
+- Example:
 
 `ip access-list extended AP_TO_SERVER`
 
@@ -61,7 +63,6 @@ This repository documents my **homelab network setup**, highlighting my expertis
 `deny ip X.X.X.0 0.0.0.255 X.X.X.0 0.0.0.240  ! Block other Access Point PCs`
 
 `permit ip any any                                ! Allow other traffic`
-- Prevent clients from using rogue DNS servers:
 
 ---
 ### Hardware
