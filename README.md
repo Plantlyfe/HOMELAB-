@@ -30,7 +30,6 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Tailscale - Remote Access VPN
 - SNMP Paessler Tester Tool
 - Lucid Charts & Draw.io for Network diagrams
-- Configured **ACLs** on Cisco Router to provide Internet Access via ISP.
 
 
 # Network Diagram
@@ -77,7 +76,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### **Cisco Router Configuration**
 - VLAN configuration with ROAS (Router on a Stick)
 - DHCP server setup for each VLAN
-- ACLs for security
+- ACLs for security and Internet Access
 
 📄 [View Configuration](configurations/cisco-router-config.txt)
 
