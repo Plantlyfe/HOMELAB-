@@ -49,7 +49,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ### Firewall / ACL Confiuration
-- Access Group Configured to translate IP address via PAT (NAT Overload) on homelab network to access Internet via the ISP Router
+- Access Group Configured to translate IP address via PAT (NAT Overload) on homelab network to access Internet via the ISP Router.
+- Blocked Specific Servers access to the internet
 - Denied SSH & RDP (Remote Desktop Protocol) access from Client VLAN to servers.
 - Blocked Access Point VLAN from accessing the Management & Server VLANs except for my Admin Laptop
 - Example:
@@ -98,14 +99,10 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - ACLs for security and Internet Access. 
 
 
-📄 [View Configuration](configurations/cisco-router-config.txt)
-
 ### **Cisco Switch Configuration**
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
 - Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
-- Subinterfaces configured on both Proxmox and R1 connections to allow and access port settings
-
-📄 [View Configuration](configurations/cisco-switch-config.txt)
+- Subinterfaces configured on both Proxmox and R1 to allow VLAN Hopping
 
 ---
 
