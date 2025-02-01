@@ -47,6 +47,23 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | Management        | Subnet 5 /30 Mask     | Network Admin                         |
 
 ---
+
+### Firewall / ACL Confiuration
+- Denied SSH & RDP (Remote Desktop Protocol) access from clients to servers.
+- Block Access Point VLAN from accessing the Management & Server VLANss except for my Admin Laptop
+
+`ip access-list extended AP_TO_SERVER`
+
+`remark Block Access Point VLAN from Accessing Server VLAN except for Admin Laptop`
+
+`permit ip host X.X.X.X X.X.X.0 0.0.0.240   ! Allow My Admin PC to access Server VLAN`
+
+`deny ip X.X.X.0 0.0.0.255 X.X.X.0 0.0.0.240  ! Block other Access Point PCs`
+
+`permit ip any any                                ! Allow other traffic`
+- Prevent clients from using rogue DNS servers:
+
+---
 ### Hardware
 | Device             | Model             | Role                               | IP                  |
 |-------------------|-------------------|-------------------------------------|---------------------|
@@ -75,15 +92,17 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ## **Configuration Files**
 ### **Cisco Router Configuration**
-- VLAN configuration with ROAS (Router on a Stick)
-- DHCP server setup for each VLAN
-- ACLs for security and Internet Access
+- VLAN configuration with ROAS (Router on a Stick) for each VLAN.
+- DHCP server setup for each VLAN. DHCP addresses excluded in each DHCP pool to allow for static IP configuration
+- ACLs for security and Internet Access. 
+
 
 📄 [View Configuration](configurations/cisco-router-config.txt)
 
 ### **Cisco Switch Configuration**
-- VLAN assignments for different devices
-- Trunk and access port settings
+- VLAN assignments for different roles: Server, Client, Access Point, & Management
+- Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
+- Subinterfaces configured on both Proxmox and R1 connections to allow and access port settings
 
 📄 [View Configuration](configurations/cisco-switch-config.txt)
 
