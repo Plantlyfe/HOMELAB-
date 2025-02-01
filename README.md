@@ -57,8 +57,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### Hardware
 | Device             | Model             | Role                               | IP                  |
 |-------------------|-------------------|-------------------------------------|---------------------|
-| Core Switch       | **TBD**           | VLAN Management                     | Static (Management) |
-| LAN Router        | Cisco 1921/K0-04  | Gateway, DHCP Server, Internal LAN  | Static              |
+| Core Switch       | Cisco Catalyst WS-C3560-24TS-E 24-Port     | VLAN Management                     | Static (Management) |
+| LAN Router        | Cisco 1921/K9-04  | Gateway, DHCP Server, Internal LAN  | Static              |
 | Proxmox Server    | Dell Optiplex     | Virtualization Host                 | Static              |
 | TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
 | ISP Router        | ISP Router        | WAN Router                          | Static              |
