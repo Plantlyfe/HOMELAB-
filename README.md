@@ -28,7 +28,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - SPLUNK & ZABBIX - Security Information and Event Management (SIEM) system for network management, log ingestion and analysis.
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
-- Tailscale - Remote Access VPN
+- Tailscale - Remote Access VPN - Intalled on Client PCs and Servers for Remote Access Administration
 - SNMP Paessler Tester Tool
 - Lucid Charts & Draw.io for Network diagrams
 
