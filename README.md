@@ -30,18 +30,11 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Tailscale - Remote Access VPN
 - SNMP Paessler Tester Tool
 - Lucid Charts & Draw.io for Network diagrams
+- Configured **ACLs** on Cisco Router to provide Internet Access via ISP.
 
-###  **Firewall Rules & Security** 
-| Purpose                                        | Destina                   | Purpose        |
-|-----------------------------------------------|----------------------------|----------------|
-| Management                                    | Network Admins              | Network Admins|
-| Servers                                       | test                        | Network Admins|
-| Workstation                                   | test                        | Network Admins|
-| Access Point                                  | Wifi Access to Homelab      | Network Admins|
 
-- Configured **ACLs** on Cisco Router to restrict access between VLANs and to provide Internet Access via ISP.
-
-📄 [View ACL Rules](firewall/acl-rules.md)
+# Network Diagram
+![Network Diagram](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png)
 
 
 ### **VLAN Configuration/ Subnet Plan**
@@ -58,10 +51,13 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | Device             | Model             | Role                               | IP                  |
 |-------------------|-------------------|-------------------------------------|---------------------|
 | Core Switch       | Cisco Catalyst WS-C3560-24TS-E 24-Port     | VLAN Management                     | Static (Management) |
-| LAN Router        | Cisco 1921/K9-04  | Gateway, DHCP Server, Internal LAN  | Static              |
+| LAN Router        | Cisco 1921/K9-V04  | Gateway, DHCP Server, Internal LAN  | Static              |
 | Proxmox Server    | Dell Optiplex     | Virtualization Host                 | Static              |
 | TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
 | ISP Router        | ISP Router        | WAN Router                          | Static              |
+
+![Network Devices](https://github.com/Plantlyfe/HOMELAB-/blob/main/Network%20Devices.jpg)
+
 
 ### Virtual Machines
 | VM Name            | OS                     | Role                       | IP           |
@@ -77,22 +73,17 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 
 
-# Network Topology
-![Network Diagram](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png)
-
 ## **Configuration Files**
 ### **Cisco Router Configuration**
 - VLAN configuration with ROAS (Router on a Stick)
 - DHCP server setup for each VLAN
 - ACLs for security
-- VPN setup
 
 📄 [View Configuration](configurations/cisco-router-config.txt)
 
 ### **Cisco Switch Configuration**
 - VLAN assignments for different devices
 - Trunk and access port settings
-- STP configuration
 
 📄 [View Configuration](configurations/cisco-switch-config.txt)
 
