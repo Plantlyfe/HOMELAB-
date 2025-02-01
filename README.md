@@ -38,13 +38,13 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 
 ### **VLAN Configuration/ Subnet Plan**
-| VLAN Name         | Subnet        | Purpose                               |
-|-------------------|---------------|---------------------------------------|
-| Native VLAN       | Subnet 1      | General Network                       |
-| Servers           | Subnet 2      | Windows Server, Zabbix, Splunk        |
-| Clients           | Subnet 3      | Windows/Linux Workstations            |
-| Access Point      | Subnet 4      | Wi-Fi                                 |
-| Management       | Subnet 5      | Network Admin                         |
+| VLAN Name         | Subnet                | Purpose                               |
+|-------------------|-----------------------|---------------------------------------|
+| Native VLAN       | Subnet 1 /24 Mask     | General Network                       |
+| Servers           | Subnet 2 /28 Mask     | Windows Server, Zabbix, Splunk        |
+| Clients           | Subnet 3 /24 Mask     | Windows/Linux Workstations            |
+| Access Point      | Subnet 4 /24 Mask     | Wi-Fi                                 |
+| Management        | Subnet 5 /30 Mask     | Network Admin                         |
 
 ---
 ### Hardware
