@@ -23,15 +23,6 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Creating custom dashboards for system health network traffic analysis & using graphing tools to visualize resource utilization trends
 - SSH Configuration for Remote Access Administration
 
-### Tools Used
-
-- SPLUNK & ZABBIX - Security Information and Event Management (SIEM) system for network management, log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
-- Tailscale - Remote Access VPN - Intalled on Client PCs and Servers for Remote Access Administration
-- SNMP Paessler Tester Tool
-- Lucid Charts & Draw.io for Network diagrams
-
 
 # Network Diagram
 ![Network Diagram](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png)
@@ -78,6 +69,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ![Network Devices](https://github.com/Plantlyfe/HOMELAB-/blob/main/Network%20Devices.jpg)
 
+## Proxmox Server
+Installed 
 
 ### Virtual Machines
 | VM Name            | OS                     | Role                       | IP           |
@@ -120,11 +113,11 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Setup plantlyfe domain & configured SSH for remote administration
 ---
 
-### **TP-Link Router Configuration**
+### **TP-Link Router (Access Point) Configuration**
 - Console into router and set it to Accesss Point mode to provide wireless connection to wired homelab network.
-- Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
 - Configured IP addresss to match Access Point VLAN Subnet (outside DHCP range)
-- Allowed wireless SSH connection into network devices & servers
+- Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
+- Completion allowed wireless SSH connections into network devices & servers
 
 ## **Future Plans**
 - Introduce **Firewall** Technologies such **Fortigate** or **PFsense** into infrastrucutre extra layer of security.
