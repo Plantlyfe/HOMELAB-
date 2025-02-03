@@ -3,21 +3,20 @@
 ### Overview
 This repository documents my **homelab network setup**, highlighting my expertise in **network administration, security, and monitoring**. The setup includes:
 - **Cisco Router & Switch:** Core network infrastructure with VLANs, DHCP, and ACLs.
-- **Proxmox Virtualization Server:** Hosting various VMs for Windows Server, Splunk, Zabbix, and testing environments such as Cisco Modeling Labs.
+- **Proxmox Virtualization Server:** Hosting various VMs for Windows Server, Splunk, Zabbix, and testing environments such as Cisco Modeling Labs (CML).
 - **Wi-Fi Access Point** Providing secure wireless access.
 - **Monitoring & Logging:** Implemented **Zabbix for SNMP monitoring** and **Splunk for Syslog analysis**.
 - **VPN Configuration:** Remote access to Servers and Clients via **Tailscale** .
 
 ### Skills Learned
 
-- Understanding of SIEM concepts and practical application.
+- Understanding of Security Information and Event Management (SIEM) concepts and practical application (Zabbix & Splunk).
 - Creating Network Toplogies/Diagram
 - Linux Installation & Administration
 - Wireless Network – Configured AP for seamless Wi-Fi access with VLAN segmentation.
 - Proficiency in analyzing and interpreting network logs.
 - Ability to generate and recognize attack signatures and patterns.
 - Enhanced knowledge of network protocols and security vulnerabilities.
-- Installing and configuring Zabbix Server and Agents.
 - SNMP-based monitoring for network devices
 - Analyzing trends in CPU, memory, and bandwidth usage
 - Creating custom dashboards for system health network traffic analysis & using graphing tools to visualize resource utilization trends
@@ -93,8 +92,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 
 ## **Network Device Configuration Files**
-### **Cisco Router Configuration**
-- Accessed the CLI via PuTTY using a Console Connection. Router cme in preconfigured with an unknown password required to enter the CLI.
+### **Cisco Router (R1) Configuration**
+- Accessed the CLI via PuTTY using a Console Connection. Router came in preconfigured with an unknown password required to enter the CLI.
 - Rebooted the router into Rommmon mode (This step bypasses the startup configuration where the passwords are stored) and set the configuration register to 0x2142 to reset router configuration allowing me to set my own username and password.
 - Static IPs configured to seperate ISP Network & Homelab Network.
 - Default Gateway & IP Routes configured to route traffic between VLANs and to ISP/Internet
@@ -108,7 +107,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ---
 
-### **Cisco Switch Configuration**
+### **Cisco Switch (SW1) Configuration**
 - Accessed the CLI via PuTTY using a Console Connection.
 - Static IP address for configuration.
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
@@ -120,8 +119,9 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ### **TP-Link Router (Access Point) Configuration**
-- Console into router and set it to Accesss Point mode to provide wireless connection to wired homelab network.
+- Set router  to Accesss Point mode to provide wireless connection to wired homelab network.
 - Configured IP addresss to match Access Point VLAN Subnet (outside DHCP range)
+- DNS inquires redirected to R1. Turned off DHCP server fuction.
 - Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
 - Completion allowed wireless SSH connections into network devices & servers
 
