@@ -97,13 +97,17 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### **Cisco Router Configuration**
 - VLAN configuration with ROAS (Router on a Stick) for each VLAN.
 - DHCP server setup for each VLAN. DHCP addresses excluded in each DHCP pool to allow for static IP configuration
-- ACLs for security and Internet Access. 
+- ACLs for security and Internet Access.
+- SNMPv3 Configuration to allow Network Monitoring via Zabbix Server
+- Syslog configured to send traps to Splunk Server
 
 
 ### **Cisco Switch Configuration**
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
 - Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
 - Subinterfaces configured on both Proxmox and R1 to allow VLAN Hopping
+- SNMPv3 configured to allow Network Monitoring via Zabbix Server
+- Syslog configured to send traps to Splunk Server
 
 ---
 
