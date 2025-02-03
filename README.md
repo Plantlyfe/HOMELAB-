@@ -75,7 +75,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - VM & Container Management accessed through a Web GUI. 
 - Installed various Virtual Machines by uploading the ISO into Proxmox to start the installation 
 - Tailscale VPN installed via the Proxmox Shell for remote access over the internet.
-- Tailscale also installed on a few VMs such as SERVER1 & Target-PC for direct remote access.
+- Tailscale also installed individually on a few VMs such as SERVER1 & Target-PC for direct remote access.
 
 ### Virtual Machines
 | VM Name            | OS                     | Role                       | IP           |
@@ -119,11 +119,11 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ### **TP-Link Router (Access Point) Configuration**
-- Set router  to Accesss Point mode to provide wireless connection to wired homelab network.
+- Set router to Accesss Point mode to provide wireless connection to wired homelab network.
 - Configured IP addresss to match Access Point VLAN Subnet (outside DHCP range)
 - DNS inquires redirected to R1. Turned off DHCP server fuction.
 - Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
-- Completion allowed wireless SSH connections into network devices & servers
+- Setup allows wireless administration & SSH connections into network devices & servers
 
 ## **Future Plans**
 - Introduce **Firewall** Technologies such **Fortigate** or **Pfsense** into infrastrucutre for extra layer of security.
