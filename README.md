@@ -95,7 +95,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### **Cisco Router (R1) Configuration**
 - Accessed the CLI via PuTTY using a Console Connection. Router came in preconfigured with an unknown password required to enter the CLI.
 - Rebooted the router into Rommmon mode (This step bypasses the startup configuration where the passwords are stored) and set the configuration register to 0x2142 to reset router configuration allowing me to set my own username and password.
-- Static IPs configured to seperate ISP Network & Homelab Network.
+- Static IP address configured on both my ISP Network & Homelab Network, both outside the DHCP Range to avoid IP conflicts.
 - Default Gateway & IP Routes configured to route traffic between VLANs and to ISP/Internet
 - VLAN configuration with ROAS (Router on a Stick) for each VLAN.
 - DHCP server setup for each VLAN. DHCP addresses excluded in each DHCP pool to allow for static IP configuration
@@ -109,7 +109,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ### **Cisco Switch (SW1) Configuration**
 - Accessed the CLI via PuTTY using a Console Connection.
-- Static IP address for configuration.
+- Static IP address configured on Management VLAN for remote SSH Access.
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
 - Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections. TP-Link Router connection configured as access port.
 - Subinterfaces configured on both Proxmox and R1 to allow VLAN Hopping
@@ -123,10 +123,10 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Configured IP addresss to match Access Point VLAN Subnet (outside DHCP range)
 - DNS inquires redirected to R1. Turned off DHCP server fuction.
 - Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
-- Setup allows wireless administration & SSH connections into network devices & servers
+- Setup allows for wireless administration & SSH connections into plantlyfe domain network devices & servers.
 
 ## **Future Plans**
-- Introduce **Firewall** Technologies such **Fortigate** or **Pfsense** into infrastrucutre for extra layer of security.
+- Introduce **Firewall** Technologies such **Fortigate** or **pfSense** into infrastrucutre for extra layer of security.
 - Implement site to site VPN to an Oracle Cloud VM via **Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
 - Learn **Python** and set up an Ansible Playbook for Network Automation.
