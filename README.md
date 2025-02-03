@@ -93,16 +93,21 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 
 
-## **Configuration Files**
+## **Network Device Configuration Files**
 ### **Cisco Router Configuration**
+- Static IP configured to seperate ISP Network & Homelab Network.
+- Default gateway and IP Routes configured to route traffic between VLANs and to ISP/Internet
 - VLAN configuration with ROAS (Router on a Stick) for each VLAN.
 - DHCP server setup for each VLAN. DHCP addresses excluded in each DHCP pool to allow for static IP configuration
 - ACLs for security and Internet Access.
 - SNMPv3 Configuration to allow Network Monitoring via Zabbix Server
 - Syslog configured to send traps to Splunk Server
+- Setup as a DNS relay agent to ISP router
 
+---
 
 ### **Cisco Switch Configuration**
+- Static IP address for configuration.
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
 - Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
 - Subinterfaces configured on both Proxmox and R1 to allow VLAN Hopping
@@ -110,6 +115,9 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Syslog configured to send traps to Splunk Server
 
 ---
+
+### **TP-Link Router Configuration**
+- Configured IP addresss to match Access Point VLAN
 
 ## **Future Plans**
 - Introduce **Firewall** Technologies such **Fortigate** or **PFsense** into infrastrucutre extra layer of security.
