@@ -69,8 +69,14 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ![Network Devices](https://github.com/Plantlyfe/HOMELAB-/blob/main/Network%20Devices.jpg)
 
-## Proxmox Server
-Installed 
+## Proxmox Server 
+![Proxmox](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/proxmox-full-lockup-color.png)
+
+- Downloaded the Proxmox ISO and copied to a USB. Started the automatic installation on a Dell OptiPlex 5070 Micro PC and set static IP outside DHCP Range.
+- VM & Container Management accessed through a Web GUI. 
+- Installed various Virtual Machines by uploading the ISO into Proxmox to start the installation 
+- Tailscale VPN installed via the Proxmox Shell for remote access over the internet.
+- Tailscale also installed on a few VMs such as SERVER1 & Target-PC for direct remote access.
 
 ### Virtual Machines
 | VM Name            | OS                     | Role                       | IP           |
@@ -106,7 +112,7 @@ Installed
 - Accessed the CLI via PuTTY using a Console Connection.
 - Static IP address for configuration.
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
-- Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
+- Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections. TP-Link Router connection configured as access port.
 - Subinterfaces configured on both Proxmox and R1 to allow VLAN Hopping
 - SNMPv3 configured to allow Network Monitoring via Zabbix Server
 - Syslog configured to send traps to Splunk Server
@@ -120,7 +126,7 @@ Installed
 - Completion allowed wireless SSH connections into network devices & servers
 
 ## **Future Plans**
-- Introduce **Firewall** Technologies such **Fortigate** or **PFsense** into infrastrucutre extra layer of security.
+- Introduce **Firewall** Technologies such **Fortigate** or **Pfsense** into infrastrucutre for extra layer of security.
 - Implement site to site VPN to an Oracle Cloud VM via **Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
 - Learn **Python** and set up an Ansible Playbook for Network Automation.
