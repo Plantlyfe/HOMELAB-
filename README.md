@@ -95,9 +95,10 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ## **Network Device Configuration Files**
 ### **Cisco Router Configuration**
-- Accessed the CLI via PuTTY using a Console Connection. Router came 
-- Static IP configured to seperate ISP Network & Homelab Network.
-- Default gateway and IP Routes configured to route traffic between VLANs and to ISP/Internet
+- Accessed the CLI via PuTTY using a Console Connection. Router cme in preconfigured with an unknown password required to enter the CLI.
+- Rebooted the router into Rommmon mode (This step bypasses the startup configuration where the passwords are stored) and set the configuration register to 0x2142 to reset router configuration allowing me to set my own username and password.
+- Static IPs configured to seperate ISP Network & Homelab Network.
+- Default Gateway & IP Routes configured to route traffic between VLANs and to ISP/Internet
 - VLAN configuration with ROAS (Router on a Stick) for each VLAN.
 - DHCP server setup for each VLAN. DHCP addresses excluded in each DHCP pool to allow for static IP configuration
 - ACLs for security and Internet Access.
@@ -109,8 +110,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ### **Cisco Switch Configuration**
-- Accessed the CLI via PuTTY using a Console Connection to Personal laptop.
-- Router came in preconfigured with unknown password. Rebooted to enter rommon mode 
+- Accessed the CLI via PuTTY using a Console Connection.
 - Static IP address for configuration.
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
 - Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
@@ -124,6 +124,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Console into router and set it to Accesss Point mode to provide wireless connection to wired homelab network.
 - Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
 - Configured IP addresss to match Access Point VLAN Subnet (outside DHCP range)
+- Allowed wireless SSH connection into network devices & servers
 
 ## **Future Plans**
 - Introduce **Firewall** Technologies such **Fortigate** or **PFsense** into infrastrucutre extra layer of security.
