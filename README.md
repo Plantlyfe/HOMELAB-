@@ -89,7 +89,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | Kali Linux         | Linux                  | Client                     | DHCP         |
 | Zabbix             | Ubuntu Server          | SNMP Server                | Static       |
 | AdGuard            | Container              | DNS resolver               | DHCP         |
-| CML                | Linux                  | Virtual Lab Environment    | DHCP         |
+| Cisco Modeling Labs                | Linux                  | Virtual Lab Environment    | DHCP         |
 
 
 
@@ -112,9 +112,10 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ---
 
 ## **Future Plans**
+- Introduce **Firewall** Technologies such **Fortigate** or **PFsense** into infrastrucutre extra layer of security.
 - Implement site to site VPN to an Oracle Cloud VM via **Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
-- Learn Python and set up an Ansible Playbook for Network Automation.
+- Learn **Python** and set up an Ansible Playbook for Network Automation.
 - Implement AI-driven network management systems (ex. ML for anomaly detection, predicting network issues, or detect zero-day attacks)
 - Test & Practice BGP configuration, route optimization, and policy management, to effectively manage network traffic in service provider environments.
 
