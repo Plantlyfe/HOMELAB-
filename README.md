@@ -95,10 +95,10 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ### **Cisco Router (R1) Configuration**
 - Accessed the CLI via PuTTY using a Console Connection. I had an issue gaining access as the router arrived preconfigured with an unknown password required to enter the CLI. 
 - Rebooted the router into Rommmon mode (This step bypasses the startup configuration where the passwords are stored) and set the configuration register to 0x2142 to reset router configuration allowing me to set my own username and password.
-- Static IP address configured on both my ISP Network & Homelab Network, both outside the DHCP Range to avoid IP conflicts.
+- Static IP address configured on both my ISP Network & Homelab Network, both outside the DHCP Range
 - Default Gateway & IP Routes configured to route traffic between VLANs and to ISP/Internet
 - VLAN configuration with ROAS (Router on a Stick) for each VLAN.
-- DHCP server setup for each VLAN. DHCP addresses excluded in each DHCP pool to allow for static IP configuration
+- DHCP server setup for each VLAN. Address range excluded in each DHCP pool to allow for static IP configuration and prevent IP conflicts.
 - ACLs for security and Internet Access.
 - SNMPv3 Configuration to allow Network Monitoring via Zabbix Server
 - Syslog configured to send traps to Splunk Server
