@@ -48,7 +48,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ---
 
-### Firewall / ACL Confiuration
+### Firewall / ACL Configuration
 - Access Group Configured to translate IP address via PAT (NAT Overload) on homelab network to access Internet via the ISP Router.
 - Blocked Specific Servers access to the internet
 - Denied SSH & RDP (Remote Desktop Protocol) access from Client VLAN to Servers VLAN.
@@ -95,6 +95,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ## **Network Device Configuration Files**
 ### **Cisco Router Configuration**
+- Accessed the CLI via PuTTY using a Console Connection. Router came 
 - Static IP configured to seperate ISP Network & Homelab Network.
 - Default gateway and IP Routes configured to route traffic between VLANs and to ISP/Internet
 - VLAN configuration with ROAS (Router on a Stick) for each VLAN.
@@ -102,22 +103,27 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - ACLs for security and Internet Access.
 - SNMPv3 Configuration to allow Network Monitoring via Zabbix Server
 - Syslog configured to send traps to Splunk Server
-- Setup as a DNS relay agent to ISP router
+- Setup as a DNS relay agent that forwards DNS requests from clients to ISP router.
+- Setup plantlyfe domain & configured SSH for remote administration
 
 ---
 
 ### **Cisco Switch Configuration**
+- Accessed the CLI via PuTTY using a Console Connection to Personal laptop.
+- Router came in preconfigured with unknown password. Rebooted to enter rommon mode 
 - Static IP address for configuration.
 - VLAN assignments for different roles: Server, Client, Access Point, & Management
 - Trunk ports configured between SW1 and R1 connection as well as Proxmox and SW1 Connections.
 - Subinterfaces configured on both Proxmox and R1 to allow VLAN Hopping
 - SNMPv3 configured to allow Network Monitoring via Zabbix Server
 - Syslog configured to send traps to Splunk Server
-
+- Setup plantlyfe domain & configured SSH for remote administration
 ---
 
 ### **TP-Link Router Configuration**
-- Configured IP addresss to match Access Point VLAN
+- Console into router and set it to Accesss Point mode to provide wireless connection to wired homelab network.
+- Performed Ping test to confrim connectivity with different devices in the planylyfe domain.
+- Configured IP addresss to match Access Point VLAN Subnet (outside DHCP range)
 
 ## **Future Plans**
 - Introduce **Firewall** Technologies such **Fortigate** or **PFsense** into infrastrucutre extra layer of security.
