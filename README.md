@@ -127,9 +127,9 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Introduce **Firewall** Technologies such as **Fortigate** or **pfSense** into infrastrucutre for extra layer of security.
 - Implement site to site VPN to an Oracle Cloud VM via **Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
-- Learn **Python** and set up an Ansible Playbook for Network Automation.
-- Implement AI-driven network management systems (ex. ML for anomaly detection, predicting network issues, or detect zero-day attacks)
-- Test & Practice BGP configuration, route optimization, and policy management, to effectively manage network traffic in service provider environments.
+- Learn **Python** and set up an **Ansible Playbook** for Network Automation.
+- Implement **AI-driven** network management systems (ex. ML for anomaly detection, predicting network issues, or detect zero-day attacks)
+- Test & Practice **BGP configuration**, route optimization, and policy management, to effectively manage network traffic in service provider environments.
 
 📄 [View Future Plans](documentation/future-plans.md)
   
