@@ -126,7 +126,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Setup allows for wireless administration & SSH connections into plantlyfe domain network devices & servers.
 
 ## **Future Plans**
-- Introduce **Firewall** Technologies such **Fortigate** or **pfSense** into infrastrucutre for extra layer of security.
+- Introduce **Firewall** Technologies such as **Fortigate** or **pfSense** into infrastrucutre for extra layer of security.
 - Implement site to site VPN to an Oracle Cloud VM via **Cisco IPSec Tunnel** for network access control
 - Expand Splunk dashboards for **threat detection**.
 - Learn **Python** and set up an Ansible Playbook for Network Automation.
