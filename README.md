@@ -15,8 +15,6 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Linux Installation & Administration
 - Wireless Network – Configured AP for seamless Wi-Fi access with VLAN segmentation.
 - Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
 - SNMP-based monitoring for network devices
 - Analyzing trends in CPU, memory, and bandwidth usage
 - Creating custom dashboards for system health network traffic analysis & using graphing tools to visualize resource utilization trends
