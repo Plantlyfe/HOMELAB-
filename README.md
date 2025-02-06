@@ -71,7 +71,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 - Downloaded the Proxmox ISO and copied to a USB. Started the automatic installation on a Dell OptiPlex 5070 Micro PC and set static IP outside DHCP Range.
 - VM & Container Management accessed through a Web GUI. 
-- Installed various Virtual Machines by uploading the ISO into Proxmox to start the installation. Setting disk sizes and memory based on expected usage, with changes made based on actual usage 
+- Installed various Virtual Machines by uploading the ISO into Proxmox to start the installation. Setting disk sizes and memory based on expected usage, with changes made based on actual usage.
+- Windows Server 2022 VM for Active Directory Management. Joined Client workstations to the planlyfe domain .
 - Tailscale VPN installed via the Proxmox Shell for remote access to Web GUI over the internet.
 - Tailscale also installed individually on a few VMs such as SERVER1 & Target-PC for direct remote access.
 
