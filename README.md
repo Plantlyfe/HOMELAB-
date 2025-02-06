@@ -92,9 +92,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ## **Network Device Configuration Files**
 <p float="left">
 <img src="https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/Cisco-logo.jpg" width="360" height="175">  
-
-![TP-Link](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/TP-Link-Logo.png)
-
+<img src="https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/TP-Link-Logo.png">
 </p>
 
 ### **Cisco Router (R1) Configuration**
