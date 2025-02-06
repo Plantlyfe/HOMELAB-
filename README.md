@@ -23,7 +23,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 # Network Diagram
 _Network Toplogy Developed in Lucidcharts_
-![Network Diagram](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png)
+![Network Diagram](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/Stan%20Homelab%20Topology.png)
 
 
 ### **VLAN Configuration/ Subnet Plan**
@@ -65,10 +65,10 @@ _Network Toplogy Developed in Lucidcharts_
 | TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
 | ISP Router        | ISP Router        | WAN Router                          | Static              |
 
-![Network Devices](https://github.com/Plantlyfe/HOMELAB-/blob/main/Network%20Devices.jpg)
+![Network Devices](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/HomeLab%20Setup%20Pic.jpg)
 
 ## Proxmox Server 
-![Proxmox](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/proxmox-full-lockup-color.png)
+![Proxmox](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/proxmox-full-lockup-color.png)
 
 - Downloaded the Proxmox ISO and copied to a USB. Started the automatic installation on a Dell OptiPlex 5070 Micro PC and set static IP outside DHCP Range.
 - VM & Container Management accessed through a Web GUI. 
@@ -92,9 +92,9 @@ _Network Toplogy Developed in Lucidcharts_
 
 ## **Network Device Configuration Files**
 <p float="left">
-<img src="https://github.com/Plantlyfe/Network-Infrastructure/blob/main/Cisco-logo.jpg" width="360" height="175">  
+<img src="https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/Cisco-logo.jpg" width="360" height="175">  
 
-![TP-Link](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/TP-Link-Logo.png)
+![TP-Link](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/TP-Link-Logo.png)
 
 </p>
 
