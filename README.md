@@ -22,6 +22,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 
 # Network Diagram
+_Network Toplogy Developed in Lucidcharts_
 ![Network Diagram](https://github.com/Plantlyfe/HOMELAB-/blob/main/Stan%20Homelab%20Topology.png)
 
 
