@@ -91,6 +91,13 @@ _Network Toplogy Developed in Lucidcharts_
 
 
 ## **Network Device Configuration Files**
+<p float="left">
+<img src="https://github.com/Plantlyfe/Network-Infrastructure/blob/main/Cisco-logo.jpg" width="360" height="175">  
+
+![TP-Link](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/TP-Link-Logo.png)
+
+</p>
+
 ### **Cisco Router (R1) Configuration**
 - Accessed the CLI via PuTTY using a Console Connection. I had an issue gaining access as the router arrived preconfigured with an unknown password required to enter the CLI. 
 - Rebooted the router into Rommmon mode (This step bypasses the startup configuration where the passwords are stored) and set the configuration register to 0x2142 to reset router configuration allowing me to set my own username and password.
