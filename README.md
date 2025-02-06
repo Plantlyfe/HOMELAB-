@@ -66,7 +66,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ![Network Devices](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/HomeLab%20Setup%20Pic.jpg)
 
-## Proxmox Server 
+## Proxmox Virtual Environemnt 
 ![Proxmox](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/proxmox-full-lockup-color.png)
 
 - Downloaded the Proxmox ISO and copied to a USB. Started the automatic installation on a Dell OptiPlex 5070 Micro PC and set static IP outside DHCP Range.
