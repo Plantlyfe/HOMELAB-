@@ -16,7 +16,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 - Wireless Network – Configured AP for seamless Wi-Fi access with VLAN segmentation.
 - Proficiency in analyzing and interpreting network logs.
 - SNMP-based monitoring for network devices
-- Analyzing trends in CPU, memory, and bandwidth usage
+- Analyzing trends in CPU, Memory, and Bandwidth usage
 - Creating custom dashboards for system health network traffic analysis & using graphing tools to visualize resource utilization trends
 - SSH Configuration for Remote Access Administration
 
