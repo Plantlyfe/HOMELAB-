@@ -22,8 +22,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 
 # Network Diagram
-_Network Toplogy Developed in Lucidcharts_
-![Network Diagram](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/Stan%20Homelab%20Topology.png)
+![Network Diagram](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/Stan%20Homelab%20Topology%20(1).png)
 
 
 ### **VLAN Configuration/ Subnet Plan**
