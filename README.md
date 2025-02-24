@@ -62,7 +62,7 @@ This repository documents my **homelab network setup**, highlighting my expertis
 | LAN Router        | Cisco 1921/K9-V04  | Gateway, DHCP Server, Internal LAN  | Static              |
 | Proxmox Server    | Dell Optiplex 5070| Virtualization Host                 | Static              |
 | TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
-| ISP Router        | ISP Router        | WAN Router                          | Static              |
+| Home Router        | ISP Router        | WAN Router                          | Static              |
 
 ![Network Devices](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/HomeLab%20Setup%20Pic.jpg)
 
