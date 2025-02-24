@@ -1,6 +1,6 @@
-# Network Infrastructure
+# Network Infrastructure - Plantlyfe Domain
 
-### Overview/Plantlyfe Domain
+### Overview
 This repository documents my **homelab network setup**, highlighting my expertise in **network administration, security, and monitoring**. The setup includes:
 - **Cisco Router & Switch:** Core network infrastructure with VLANs, DHCP, and ACLs.
 - **Proxmox Virtualization Server:** Hosting various VMs suchs as Windows Server 2022, Splunk, Zabbix, and testing environments such as Cisco Modeling Labs (CML).
@@ -55,12 +55,12 @@ This repository documents my **homelab network setup**, highlighting my expertis
 `permit ip any any                                ! Allow other traffic`
 
 ---
-### Hardware
+### 💻 Hardware
 | Device             | Model             | Role                               | IP                  |
 |-------------------|-------------------|-------------------------------------|---------------------|
 | Core Switch       | Cisco Catalyst WS-C3560-24TS-E 24-Port     | VLAN Management                     | Static (Management) |
 | LAN Router        | Cisco 1921/K9-V04  | Gateway, DHCP Server, Internal LAN  | Static              |
-| Proxmox Server    | Dell Optiplex     | Virtualization Host                 | Static              |
+| Proxmox Server    | Dell Optiplex 5070| Virtualization Host                 | Static              |
 | TP-Link Router    | Archer A54        | Wi-Fi Access Point                  | Static              |
 | ISP Router        | ISP Router        | WAN Router                          | Static              |
 
@@ -68,7 +68,11 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 ## Proxmox Virtual Environemnt 
 ![Proxmox](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/proxmox-full-lockup-color.png)
+### Details
+My Proxmox virtualization server is built on a Dell Opitplex 5070 Micro PC. Tt has an Core i5 Four-Core Processor, 16 GB of RAM and 512 GB of Memory.
+I choose due to the integration of essential features into the base system. Things such as clustering, HA, automated backups, easier updating, etc. without needing additional VMWare products was quite nice and very benefical for a homelab setting. My important virtual machines were backed up using ghettoVCB, a free vmware community developed script for backups. It is simple, robust, and does the job. It was done over NFS to my storage server. I had used vSphere and vCenter long enough to get a grasp on the platform because it was common to find it in Enterprise business environments so being familiar with it is important.
 
+### Steps
 - Downloaded the Proxmox ISO and copied to a USB. Started the automatic installation on a Dell OptiPlex 5070 Micro PC and set static IP outside DHCP Range.
 - VM & Container Management accessed through a Web GUI. 
 - Installed various Virtual Machines by uploading the ISO into Proxmox to start the installation. Setting disk sizes and memory based on expected usage, with changes made based on actual usage.
