@@ -12,8 +12,8 @@ This repository documents my **homelab network setup**, highlighting my expertis
 
 - Understanding of Security Information and Event Management (SIEM) concepts and practical application (Zabbix & Splunk).
 - Creating Network Toplogies/Diagram
-- Linux Installation & Administration
-- Wireless Network – Configured AP for seamless Wi-Fi access with VLAN segmentation.
+- Linux Server Administration
+- Wireless Networking – Configured AP for seamless Wi-Fi access with VLAN segmentation.
 - Proficiency in analyzing and interpreting network logs.
 - SNMP-based monitoring for network devices
 - Analyzing trends in CPU, Memory, and Bandwidth usage
@@ -69,8 +69,9 @@ This repository documents my **homelab network setup**, highlighting my expertis
 ## Proxmox Virtual Environemnt 
 ![Proxmox](https://github.com/Plantlyfe/Network-Infrastructure/blob/main/screenshot/proxmox-full-lockup-color.png)
 ### Details
-My Proxmox virtualization server is built on a Dell Opitplex 5070 Micro PC. Tt has an Core i5 Four-Core Processor, 16 GB of RAM and 512 GB of Memory.
-I choose due to the integration of essential features into the base system. Things such as clustering, HA, automated backups, easier updating, etc. without needing additional VMWare products was quite nice and very benefical for a homelab setting. My important virtual machines were backed up using ghettoVCB, a free vmware community developed script for backups. It is simple, robust, and does the job. It was done over NFS to my storage server. I had used vSphere and vCenter long enough to get a grasp on the platform because it was common to find it in Enterprise business environments so being familiar with it is important.
+- My Proxmox virtualization server is built on a Dell Opitplex 5070 Micro PC. It has an Core i5 Four-Core Processor @ 3.2Ghz, 16 GB of RAM and 512 GB of Memory.
+- I decided on Proxmox due to the built in features of the base system. Features such as VLAN assignments, easy to navigate Web GUI.
+-- It also provides an overview of the task history and system logs of each VM/node. It performs load balancing by dynamically scaling my storage resources. prevents any single host from overloading and optimizes utilizing available resources.
 
 ### Steps
 - Downloaded the Proxmox ISO and copied to a USB. Started the automatic installation on a Dell OptiPlex 5070 Micro PC and set static IP outside DHCP Range.
